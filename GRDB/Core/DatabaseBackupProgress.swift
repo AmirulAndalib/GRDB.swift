@@ -12,7 +12,7 @@ public struct DatabaseBackupProgress: Sendable {
     /// It is the result of the `sqlite3_backup_pagecount` function.
     public let totalPageCount: Int
     
-    /// The number of of backed up pages.
+    /// The number of backed up pages.
     ///
     /// It is equal to `totalPageCount - remainingPageCount`.
     public var completedPageCount: Int {
